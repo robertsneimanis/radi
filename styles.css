@@ -90,17 +90,17 @@ footer small { color: var(--muted); font-size: .7rem; }
 	.nav { padding-top: 18px; }
 	.language-switcher { border-left: 0; margin-left: 0; padding-left: 0; }
 	.hero { display: block; padding-top: 48px; }
-	h1 { font-size: clamp(4rem, 20vw, 6rem); }
+	h1 { font-size: clamp(4rem, 20vw, 6rem); line-height: .92; }
 	.hero-media { margin-top: 65px; min-height: 420px; }
 	.image-note { left: 16px; }
 	.manifesto, .contact { display: block; padding: 70px 8vw; }
 	.manifesto h2 { margin-bottom: 45px; }
-	.contact h2 { margin-bottom: 55px; }
+	.contact h2 { line-height: .92; margin-bottom: 55px; }
 	.section { padding: 75px 8vw; }
 	.section-head { align-items: start; display: block; }
 	.section-head p { margin-top: 20px; text-align: left; }
 	.stories, .team { display: block; }
-	.story, .story.secondary { margin-bottom: 18px; min-height: 360px; }
+	.story, .story.secondary { display: block; margin-bottom: 18px; min-height: 360px; }
 	.person { margin-bottom: 46px; }
 	footer { align-items: start; flex-direction: column; gap: 18px; padding: 25px 8vw; }
 }
