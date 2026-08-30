@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="RaDi Latvieši — röster från den lettiska diasporan i Sverige.">
+	<title>RaDi Latvieši — Balsis</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="app.js"></script>
+</head>
+<body>
+	<header class="bar">
+		<a class="logo" href="#top"><img src="../../images/radi_icon.jpg" alt="">RaDi&nbsp;Latvieši</a>
+		<div class="langs" aria-label="Language">
+			<button data-lang="lv" type="button">LV</button>
+			<button data-lang="en" type="button">EN</button>
+			<button data-lang="sv" class="is-active" type="button">SV</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="top" data-track="RaDi Latvieši">
+			<div class="hero-type">
+				<p class="kicker" data-i18n="eyebrow">Röster · minnen · skapande</p>
+				<h1 data-i18n="heroPlain">Det vi minns, lever.</h1>
+				<p class="hero-lead" data-i18n="heroIntro">RaDi Latvieši samlar livsöden och berättelser från den lettiska diasporan i Sverige.</p>
+				<a class="play-cta" href="https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s" target="_blank" rel="noreferrer">
+					<span class="play-ico" aria-hidden="true">▶</span><span data-i18n="film">Se vår film</span>
+				</a>
+			</div>
+			<div class="porthole"><img src="../../images/radi_book.jpg" alt=""></div>
+		</section>
+
+		<section class="manifesto" id="about" data-track="Manifest">
+			<p class="section-index">01</p>
+			<h2 data-i18n="manifestoTitle">En bro mellan då och nu.</h2>
+			<p class="quote" data-i18n="manifestoLead">Vi tror på kraften i en personlig berättelse.</p>
+			<p class="note" data-i18n="manifestoNote">Vårt arbete rör sig mellan historiska vittnesmål och dagens kreativa gemenskaper.</p>
+		</section>
+
+		<section class="tracks" id="stories" data-track="Berättelser">
+			<p class="section-index">02</p>
+			<h2 data-i18n="storiesTitle">Utvalda berättelser</h2>
+			<p class="section-sub" data-i18n="storiesNote">Film, samtal och serier från vårt arkiv</p>
+			<ol class="tracklist">
+				<li class="track">
+					<a href="https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s" target="_blank" rel="noreferrer">
+						<span class="track-no">1</span>
+						<span class="track-ico" aria-hidden="true">▶</span>
+						<span class="track-title" data-i18n="stockholmTitle">Latvians in Stockholm</span>
+						<span class="track-desc" data-i18n="stockholmNote">En videofilm om en stad, ett språk och ett hem.</span>
+						<span class="track-len">24:10</span>
+					</a>
+				</li>
+				<li class="track">
+					<a href="https://www.youtube.com/results?search_query=laiva+latvietis+sird%C4%AB" target="_blank" rel="noreferrer">
+						<span class="track-no">2</span>
+						<span class="track-ico" aria-hidden="true">▶</span>
+						<span class="track-title" data-i18n="heartTitle">Latvietis sirdī</span>
+						<span class="track-desc" data-i18n="heartNote">Ett program om att bära Lettland i hjärtat.</span>
+						<span class="track-len">Serie</span>
+					</a>
+				</li>
+			</ol>
+		</section>
+
+		<section class="crew" id="team" data-track="Team">
+			<p class="section-index">03</p>
+			<h2 data-i18n="teamTitle">RaDi-teamet</h2>
+			<p class="section-sub" data-i18n="teamNote">Tre personer, många perspektiv</p>
+			<div class="crew-row">
+				<article class="member">
+					<div class="chip"><img src="../../images/radi_icon.jpg" alt=""></div>
+					<span class="member-role" data-i18n="founderRole">Grundare</span>
+					<h3 data-i18n="founderName">Gunta Eneroth</h3>
+					<p data-i18n="founderBio">Journalist och lärare.</p>
+				</article>
+				<article class="member">
+					<div class="chip"><img src="../../images/radi_book.jpg" alt=""></div>
+					<span class="member-role" data-i18n="imageRole">Bild</span>
+					<h3 data-i18n="imageName">Elina</h3>
+					<p data-i18n="imageBio">Professionell porträttfotograf.</p>
+					<a href="https://www.facebook.com/elinanomadphotography" target="_blank" rel="noreferrer">Elina Nomad Photography ↗</a>
+				</article>
+				<article class="member">
+					<div class="chip"><img src="../../images/radi_icon.jpg" alt=""></div>
+					<span class="member-role" data-i18n="writerRole">Text</span>
+					<h3 data-i18n="writerName">Amanda Zemīte</h3>
+					<p data-i18n="writerBio">Journalistutbildad vid Riga Stradins University.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="outro" id="contact" data-track="Kontakt">
+			<p class="section-index">04</p>
+			<h2 data-i18n="contactTitle">Har du en berättelse?</h2>
+			<p class="note" data-i18n="contactNote">Vi vill gärna höra från dig.</p>
+			<a class="mail" href="mailto:Radi.latviesi@gmail.com">Radi.latviesi@gmail.com</a>
+			<div class="socials">
+				<a href="https://www.facebook.com/radosielatviesi" target="_blank" rel="noreferrer">Facebook</a>
+				<a href="https://www.youtube.com/results?search_query=radi+latviesi" target="_blank" rel="noreferrer">YouTube</a>
+				<a href="https://www.instagram.com/radi_latviesi/" target="_blank" rel="noreferrer">Instagram</a>
+			</div>
+			<small>© 2026 RaDi Latvieši</small>
+		</section>
+	</main>
+
+	<footer class="player" aria-label="Section navigator">
+		<button class="pl-btn" id="prev" type="button" aria-label="Previous">⏮</button>
+		<button class="pl-btn pl-btn--main" id="next" type="button" aria-label="Next">⏭</button>
+		<div class="pl-now">
+			<span class="pl-label">Nu</span>
+			<span class="pl-track" id="nowTrack">RaDi Latvieši</span>
+		</div>
+		<div class="wave" id="wave" aria-hidden="true"></div>
+		<span class="pl-time" id="plTime">01 / 05</span>
+	</footer>
+</body>
+</html>
