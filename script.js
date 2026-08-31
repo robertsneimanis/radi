@@ -95,5 +95,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.language-button').forEach((button) => {
     button.addEventListener('click', () => applyLanguage(button.dataset.language));
   });
-  applyLanguage(localStorage.getItem('radi-language') || 'sv');
+  applyLanguage(localStorage.getItem('radi-language') || 'lv');
 });
