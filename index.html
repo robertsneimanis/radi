@@ -1,49 +1,278 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="RaDi Latvieši apkopo dzīvesstāstus, liecības un radošumu no Zviedrijas latviešu diasporas.">
-	<title>RaDi Latvieši | Balsis, kas dzīvo tālāk</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
-	<script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RaDi Latvieši — Zviedrijas latviešu diasporas dzīvesstāsti filmās un sarunās.">
+<title>RaDi Latvieši</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0b'/%3E%3Ctext x='16' y='23' font-family='Impact,Haettenschweiler,Arial,sans-serif' font-size='21' fill='%23e0a24a' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="images/logo-website.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<nav class="design-switch">
-		<small>Skices:</small>
-		<a href="index.html" class="on">Oriģināls</a>
-		<a href="redesign-arhivs.html">Arhīvs</a>
-		<a href="redesign-redakcija.html">Redakcija</a>
-		<a href="redesign-kino.html">Kino</a>
-	</nav>
-	<div class="topline"><span>Radošā diaspora Zviedrijā</span><span>Dibināts 2019. gadā / Stokholma</span></div>
-	<nav class="nav" aria-label="Galvenā navigācija">
-		<a class="brand" href="#top"><img src="images/logo.png" alt="RaDi Latvieši logotips"><span class="brand-name">RaDi Latvieši</span></a>
-		<div class="nav-links"><a href="#om">Par mums</a><a href="#berattelser">Stāsti</a><a href="#team">Komanda</a><a class="nav-cta" href="#kontakt">Sazināties</a><div class="language-switcher" aria-label="Choose language"><button class="language-button is-active" data-language="lv" type="button">LV</button><button class="language-button" data-language="en" type="button">EN</button><button class="language-button" data-language="sv" type="button">SV</button></div></div>
-	</nav>
+<div id="bar"></div>
 
-	<main id="top">
-		<section class="hero">
-			<div class="hero-copy">
-				<div class="eyebrow">Balsis · atmiņas · radošums</div>
-				<h1>Tas, ko<br>atceramies,<br><em>dzīvo.</em></h1>
-				<p class="hero-intro">RaDi Latvieši apkopo Zviedrijas latviešu diasporas dzīvesstāstus un pieredzi. Ar intervijām, filmām un sarunām mēs saglabājam šīs pieredzes.</p>
-				<div class="hero-actions"><a class="button" href="#berattelser">Atklāt stāstus <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s" target="_blank" rel="noreferrer">Skatīties filmu</a></div>
-			</div>
-			<div class="hero-media"><img class="hero-image" src="images/book.png" alt="Rokas, kas tur grāmatu Latvieši Zviedrijā"><div class="image-note"><strong>Saglabāt nozīmē stāstīt.</strong><small>Platforma latviešu radošumam Zviedrijā.</small></div></div>
-		</section>
+<nav class="nav" id="nav">
+  <a class="brand" href="#top"><img src="images/logo-website.png" alt="RaDi Latvieši — Radošā diaspora"></a>
+  <div class="links">
+    <a href="#bridge" data-i18n="navAbout">Par mums</a>
+    <a href="#reel" data-i18n="navStories">Stāsti</a>
+    <a href="#team" data-i18n="navTeam">Komanda</a>
+    <a class="keep" href="#contact" data-i18n="navContact">Sazināties</a>
+    <span class="lang">
+      <button data-lang="lv" class="on">LV</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="sv">SV</button>
+    </span>
+  </div>
+</nav>
 
-		<section class="manifesto" id="om"><h2>Tilts starp toreiz un tagad.</h2><div class="manifesto-copy"><p>Kopš 2019. gada dokumentējam Zviedrijas latviešu diasporas dzīvi, kultūru un radošo garu.</p><small>Mūsu darbs savieno vēsturiskās liecības ar mūsdienu radošajām kopienām. Katra saruna kļūst par daļu no dzīva arhīva.</small><div class="manifesto-more"><p>RaDi Latvieši darbība ietver raidījumu ciklu ”Latvietis sirdī”, videoprojektus ”Latvieši Stokholmā” un ”Glābšanās rītausmā”, radošo latviešu stāstus ”Ziemassvētku kalendāri” un izveidoto krājumu – grāmatu ”Latvieši Zviedrijā”. Krājumā iekļauti zinātniski pētījumi un personiskas liecības par Zviedrijas latviešu organizācijām, radošajām kopām, trimdas literatūru un sabiedriskajām iniciatīvām.</p><p>RaDi Latvieši ir piemērs jaunai kultūras saglabāšanas formai, jo kultūras saglabāšana diasporā mūsdienās ir ne tikai koris, deja vai teātris, bet arī stāstu dokumentēšana, filmas un digitālais saturs.</p></div></div></section>
+<header class="hero" id="top">
+  <div class="bg"></div>
+  <div class="inner">
+    <div class="eyebrow" data-i18n="eyebrow">Balsis · atmiņas · radošums</div>
+    <h1 data-i18n="heroTitle">Tas, ko atceramies, <span>dzīvo.</span></h1>
+    <p data-i18n="heroIntro">RaDi Latvieši apkopo Zviedrijas latviešu diasporas dzīves stāstus un pieredzi, veidojot intervijas, filmas un video.</p>
+    <p class="hero-motto" data-i18n="motto">Stāstot mēs saglabājam. Radot mēs turpinām.</p>
+    <div class="cta">
+      <a class="btn solid" href="#reel" data-i18n="ctaExplore">Atklāt stāstus →</a>
+      <a class="btn ghost" href="https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s" target="_blank" rel="noreferrer" data-i18n="ctaFilm">Skatīties filmu</a>
+    </div>
+  </div>
+  <div class="scroll-hint" data-i18n="scrollHint">Ritini</div>
+</header>
 
-		<section class="section" id="berattelser"><div class="section-head"><h2>Izvēlētie stāsti</h2><p>Filmas, sarunas un raidījumi no mūsu arhīva</p></div><div class="stories"><a class="story" href="https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s" target="_blank" rel="noreferrer"><img src="images/book.png" alt="Grāmata Latvieši Zviedrijā"><div class="story-overlay"><h3>Stokholmas latvieši</h3><p>Filma par pilsētu, valodu un mājām.</p></div></a><a class="story secondary" href="https://www.youtube.com/results?search_query=laiva+latvietis+sird%C4%AB" target="_blank" rel="noreferrer"><img src="images/logo.png" alt="RaDi Latvieši logotips"><div class="story-overlay"><h3>Latvietis sirdī</h3><p>Raidījums par Latviju sirdī. ↗</p></div></a></div></section>
+<section class="diptych" id="bridge">
+  <div class="txt reveal">
+    <h2 data-i18n="manifestoTitle">Tilts starp toreiz un tagad.</h2>
+    <p data-i18n="manifestoLead">Kopš 2019. gada dokumentējam Zviedrijas latviešu diasporas dzīvi, kultūru un radošo garu.</p>
+    <p class="small" data-i18n="manifestoNote">Mūsu darbs savieno vēsturiskās liecības ar mūsdienu radošajām kopienām. Katra saruna kļūst par daļu no mūsu kopīgās vēstures!</p>
+  </div>
+  <div class="mark">
+    <div class="vlabel" data-i18n="foundedLabel">Dibināts</div>
+    <div class="year">2019</div>
+  </div>
+</section>
 
-		<section class="section team-section" id="team"><div class="section-head"><h2>RaDi komanda</h2><p>Dibinātāja un redaktore</p></div><div class="team"><article class="person"><span class="person-number">DIBINĀTĀJA</span><h3>Gunta Eneroth (Enerūta)</h3><p>Žurnāliste un skolotāja. Zviedrijas Žurnālistu asociācijas biedre, Latvijas Avīzes un Latviesi.com korespondente.</p></article></div></section>
+<section class="reel-wrap" id="reel">
+  <div class="reel-head reveal">
+    <div>
+      <h2 data-i18n="storiesTitle">Izvēlētie stāsti</h2>
+    </div>
+    <p data-i18n="storiesNote">Filmas, sarunas un raidījumi no mūsu arhīva</p>
+    <div class="reel-nav">
+      <button id="prev" aria-label="prev">←</button>
+      <button id="next" aria-label="next">→</button>
+    </div>
+  </div>
+  <div class="reel" id="reelTrack"></div>
+</section>
 
-		<section class="contact" id="kontakt"><h2>Tev ir<br>stāsts?</h2><div class="contact-copy"><p>Mēs labprāt Tevi uzklausīsim! Dalies ar atmiņām, pastāsti par savu radošo brīvā laika interesi, iesaki radošus cilvēkus! Sazinies ar mums par sadarbību:</p><a class="email" href="mailto:Radi.latviesi@gmail.com">Radi.latviesi@gmail.com</a></div></section>
-	</main>
-	<footer><small>© 2026 RaDi Latvieši</small><div class="socials"><a href="https://www.facebook.com/radosielatviesi" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"/></svg></a><a href="https://www.youtube.com/results?search_query=radi+latviesi" target="_blank" rel="noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 6.51a3.02 3.02 0 0 0-2.12-2.14C19.5 3.86 12 3.86 12 3.86s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.51C0 8.4 0 12 0 12s0 3.6.5 5.49a3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14C24 15.6 24 12 24 12s0-3.6-.5-5.49ZM9.6 15.6V8.4l6.24 3.6-6.24 3.6Z"/></svg></a><a href="https://www.instagram.com/radi_latviesi/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.38-2.12A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.41a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg></a></div></footer>
+<section class="statement reveal">
+  <p data-i18n="statement">Kultūras saglabāšana diasporā mūsdienās ir ne tikai <b>koris, deja vai teātris</b>, bet arī <b>stāstu dokumentēšana, filmas un digitālais saturs</b>.</p>
+  <p class="sub" data-i18n="activities2">RaDi Latvieši ir piemērs jaunai kultūras saglabāšanas formai.</p>
+</section>
+
+<section class="team reveal" id="team">
+  <div class="role" data-i18n="founderRole">DIBINĀTĀJA UN REDAKTORE</div>
+  <h2 data-i18n="founderName">Gunta Eneroth (Enerūta)</h2>
+  <p data-i18n="founderBio">Žurnāliste un skolotāja.</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="reveal" data-i18n="contactTitle">Tev ir stāsts?</h2>
+  <p class="reveal" data-i18n="contactNote">Mēs labprāt Tevi uzklausīsim!</p>
+  <a class="mail reveal" href="mailto:Radi.latviesi@gmail.com">Radi.latviesi@gmail.com</a>
+</section>
+
+<footer>
+  <span>© 2026 RaDi Latvieši</span>
+  <span>
+    <a href="https://www.facebook.com/radosielatviesi" target="_blank" rel="noreferrer">Facebook</a> ·
+    <a href="https://www.youtube.com/results?search_query=radi+latviesi" target="_blank" rel="noreferrer">YouTube</a> ·
+    <a href="https://www.instagram.com/radi_latviesi/" target="_blank" rel="noreferrer">Instagram</a>
+  </span>
+</footer>
+
+<script>
+const I18N = {
+  lv:{
+    navAbout:'Par mums',navStories:'Stāsti',navTeam:'Komanda',navContact:'Sazināties',
+    eyebrow:'Balsis · atmiņas · radošums',
+    heroTitle:'Tas, ko atceramies, <span>dzīvo.</span>',
+    heroIntro:'RaDi Latvieši apkopo Zviedrijas latviešu diasporas dzīves stāstus un pieredzi, veidojot intervijas, filmas un video.',
+    motto:'Stāstot mēs saglabājam. Radot mēs turpinām.',
+    ctaExplore:'Atklāt stāstus →', ctaFilm:'Skatīties filmu', scrollHint:'Ritini',
+    manifestoTitle:'Tilts starp toreiz un tagad.',
+    manifestoLead:'Kopš 2019. gada dokumentējam Zviedrijas latviešu diasporas dzīvi, kultūru un radošo garu.',
+    manifestoNote:'Mūsu darbs savieno vēsturiskās liecības ar mūsdienu radošajām kopienām. Katra saruna kļūst par daļu no mūsu kopīgās vēstures!',
+    foundedLabel:'Dibināts',
+    storiesTitle:'Izvēlētie stāsti', storiesNote:'Filmas, sarunas un raidījumi no mūsu arhīva',
+    statement:'Kultūras saglabāšana diasporā mūsdienās ir ne tikai <b>koris, deja vai teātris</b>, bet arī <b>stāstu dokumentēšana, filmas un digitālais saturs</b>.',
+    activities2:'RaDi Latvieši ir piemērs jaunai kultūras saglabāšanas formai — no raidījumu cikla „Latvietis sirdī” līdz krājumam „Latvieši Zviedrijā”.',
+    founderRole:'DIBINĀTĀJA UN REDAKTORE', founderName:'Gunta Eneroth (Enerūta)',
+    founderBio:'Žurnāliste un skolotāja. Zviedrijas Žurnālistu asociācijas biedre, Latvijas Avīzes un Latviesi.com korespondente.',
+    contactTitle:'Tev ir stāsts?',
+    contactNote:'Mēs labprāt Tevi uzklausīsim! Dalies ar atmiņām, pastāsti par savu radošo brīvā laika interesi, iesaki radošus cilvēkus! Sazinies ar mums par sadarbību:',
+    reel:[
+      {n:'01', t:'Stokholmas latvieši', ty:'Filma', go:'Skatīties ↗', href:'https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s'},
+      {n:'02', t:'Latvietis sirdī', ty:'Raidījumu cikls', go:'Klausīties ↗', href:'https://www.youtube.com/results?search_query=laiva+latvietis+sird%C4%AB'},
+      {n:'03', t:'Latvieši Stokholmā', ty:'Videoprojekts', go:'Skatīties ↗', href:'https://www.youtube.com/results?search_query=latvie%C5%A1i+stokholm%C4%81'},
+      {n:'04', t:'Ziemassvētku kalendāri', ty:'Radošo stāstu sērija', go:'Apskatīt ↗', href:'https://www.instagram.com/radi_latviesi/'},
+      {n:'05', t:'Latvieši Zviedrijā', ty:'Grāmata / krājums', go:'Vairāk ↗', href:'https://www.facebook.com/radosielatviesi'}
+    ]
+  },
+  en:{
+    navAbout:'About us',navStories:'Stories',navTeam:'Team',navContact:'Contact us',
+    eyebrow:'Voices · memories · creativity',
+    heroTitle:'What we remember, <span>lives.</span>',
+    heroIntro:'RaDi Latvieši gathers life stories and experiences from the Latvian diaspora in Sweden. Through interviews, film, and conversations, we keep these experiences close.',
+    motto:'By telling, we preserve. By creating, we carry on.',
+    ctaExplore:'Explore stories →', ctaFilm:'Watch our film', scrollHint:'Scroll',
+    manifestoTitle:'A bridge between then and now.',
+    manifestoLead:'Since 2019, we have documented the life, culture, and creative spirit of the Latvian diaspora in Sweden.',
+    manifestoNote:"Our work moves between historical testimony and today's creative communities. Every conversation becomes part of a living archive.",
+    foundedLabel:'Established',
+    storiesTitle:'Featured stories', storiesNote:'Films, conversations, and series from our archive',
+    statement:'Keeping a culture alive in the diaspora today is not only <b>choir, dance or theatre</b>, but also <b>documenting stories, making films and creating digital content</b>.',
+    activities2:'RaDi Latvieši is an example of a new form of cultural preservation — from the radio series “Latvietis sirdī” to the anthology “Latvieši Zviedrijā”.',
+    founderRole:'FOUNDER AND EDITOR', founderName:'Gunta Eneroth',
+    founderBio:"Journalist and teacher. Member of the Swedish Journalists' Association and correspondent for Latvijas Avīze and Latviesi.com.",
+    contactTitle:'Do you have a story?',
+    contactNote:'We would love to hear from you! Share memories, tell us about your creative pastime, suggest creative people! Get in touch about a collaboration:',
+    reel:[
+      {n:'01', t:'Latvians in Stockholm', ty:'Film', go:'Watch ↗', href:'https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s'},
+      {n:'02', t:'Latvietis sirdī', ty:'Radio series', go:'Listen ↗', href:'https://www.youtube.com/results?search_query=laiva+latvietis+sird%C4%AB'},
+      {n:'03', t:'Latvieši Stokholmā', ty:'Video project', go:'Watch ↗', href:'https://www.youtube.com/results?search_query=latvie%C5%A1i+stokholm%C4%81'},
+      {n:'04', t:'Ziemassvētku kalendāri', ty:'Story series', go:'View ↗', href:'https://www.instagram.com/radi_latviesi/'},
+      {n:'05', t:'Latvieši Zviedrijā', ty:'Book / anthology', go:'More ↗', href:'https://www.facebook.com/radosielatviesi'}
+    ]
+  },
+  sv:{
+    navAbout:'Om oss',navStories:'Berättelser',navTeam:'Team',navContact:'Kontakta oss',
+    eyebrow:'Röster · minnen · skapande',
+    heroTitle:'Det vi minns, <span>lever.</span>',
+    heroIntro:'RaDi Latvieši samlar livsöden och berättelser från den lettiska diasporan i Sverige. Genom intervjuer, film och möten håller vi erfarenheter nära.',
+    motto:'Genom att berätta bevarar vi. Genom att skapa för vi det vidare.',
+    ctaExplore:'Upptäck berättelser →', ctaFilm:'Se vår film', scrollHint:'Skrolla',
+    manifestoTitle:'En bro mellan då och nu.',
+    manifestoLead:'Sedan 2019 har vi dokumenterat den lettiska diasporans liv, kultur och skaparglädje i Sverige.',
+    manifestoNote:'Vårt arbete rör sig mellan historiska vittnesmål och dagens kreativa gemenskaper. Varje samtal blir en del av ett levande arkiv.',
+    foundedLabel:'Grundat',
+    storiesTitle:'Utvalda berättelser', storiesNote:'Film, samtal och serier från vårt arkiv',
+    statement:'Att bevara en kultur i diasporan i dag handlar inte bara om <b>kör, dans eller teater</b>, utan också om <b>att dokumentera berättelser, göra film och skapa digitalt innehåll</b>.',
+    activities2:'RaDi Latvieši är ett exempel på en ny form av kulturbevarande — från programserien ”Latvietis sirdī” till antologin ”Latvieši Zviedrijā”.',
+    founderRole:'GRUNDARE OCH REDAKTÖR', founderName:'Gunta Eneroth',
+    founderBio:'Journalist och lärare. Medlem i Svenska Journalistförbundet och korrespondent för Latvijas Avīze och Latviesi.com.',
+    contactTitle:'Har du en berättelse?',
+    contactNote:'Vi lyssnar gärna på dig! Dela med dig av minnen, berätta om ditt kreativa fritidsintresse, tipsa om kreativa personer! Hör av dig om ett samarbete:',
+    reel:[
+      {n:'01', t:'Latvians in Stockholm', ty:'Film', go:'Se ↗', href:'https://www.youtube.com/watch?v=m3q-g9-DSDE&t=1s'},
+      {n:'02', t:'Latvietis sirdī', ty:'Programserie', go:'Lyssna ↗', href:'https://www.youtube.com/results?search_query=laiva+latvietis+sird%C4%AB'},
+      {n:'03', t:'Latvieši Stokholmā', ty:'Videoprojekt', go:'Se ↗', href:'https://www.youtube.com/results?search_query=latvie%C5%A1i+stokholm%C4%81'},
+      {n:'04', t:'Ziemassvētku kalendāri', ty:'Berättelseserie', go:'Visa ↗', href:'https://www.instagram.com/radi_latviesi/'},
+      {n:'05', t:'Latvieši Zviedrijā', ty:'Bok / antologi', go:'Mer ↗', href:'https://www.facebook.com/radosielatviesi'}
+    ]
+  }
+};
+
+let lang = localStorage.getItem('radi-language') || 'lv';
+
+function renderReel(){
+  const d = I18N[lang];
+  const track = document.getElementById('reelTrack');
+  track.innerHTML = d.reel.map(c=>`
+    <a class="card" href="${c.href}" target="_blank" rel="noreferrer">
+      <div class="num">${c.n}</div>
+      <h3>${c.t}</h3>
+      <div>
+        <div class="type">${c.ty}</div>
+        <div class="go">${c.go}</div>
+      </div>
+    </a>`).join('');
+}
+
+function applyLang(l){
+  lang = l;
+  const d = I18N[l];
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    if(d[el.dataset.i18n] !== undefined) el.innerHTML = d[el.dataset.i18n];
+  });
+  document.querySelectorAll('.lang button').forEach(b=> b.classList.toggle('on', b.dataset.lang===l));
+  localStorage.setItem('radi-language', l);
+  renderReel();
+}
+
+document.querySelectorAll('.lang button').forEach(b=>
+  b.addEventListener('click', ()=> applyLang(b.dataset.lang)));
+
+// progress bar + nav + scroll-driven dark→light palette
+const nav = document.getElementById('nav');
+const bar = document.getElementById('bar');
+const root = document.documentElement;
+
+const DARK = {
+  bg:[10,10,11,1], bg2:[17,17,19,1], fg:[243,240,233,1], dim:[154,150,140,1], soft:[207,203,193,1],
+  line:[243,240,233,.14], stroke:[243,240,233,.22], navbg:[10,10,11,.86]
+};
+const LIGHT = {
+  bg:[245,242,234,1], bg2:[233,228,217,1], fg:[26,24,18,1], dim:[110,104,92,1], soft:[74,70,60,1],
+  line:[26,24,18,.16], stroke:[26,24,18,.22], navbg:[245,242,234,.9]
+};
+const KEYS = Object.keys(DARK);
+
+function mix(k, t){
+  const a = DARK[k], b = LIGHT[k];
+  const r = Math.round(a[0]+(b[0]-a[0])*t);
+  const g = Math.round(a[1]+(b[1]-a[1])*t);
+  const bl = Math.round(a[2]+(b[2]-a[2])*t);
+  const al = (a[3]+(b[3]-a[3])*t).toFixed(3);
+  return `rgba(${r},${g},${bl},${al})`;
+}
+
+function paint(){
+  const vh = innerHeight;
+  const start = vh * 0.85;                              // stays fully dark through the hero
+  const end = root.scrollHeight - vh * 1.15;            // fully light near the footer
+  let t = (scrollY - start) / Math.max(1, end - start);
+  t = Math.max(0, Math.min(1, t));
+  t = t * t * (3 - 2 * t);                              // smoothstep
+  KEYS.forEach(k => root.style.setProperty('--' + k, mix(k, t)));
+}
+
+let ticking = false;
+function onScroll(){
+  const h = root.scrollHeight - innerHeight;
+  bar.style.width = (scrollY / h * 100) + '%';
+  nav.classList.toggle('solid', scrollY > innerHeight * 0.7);
+  paint();
+  ticking = false;
+}
+addEventListener('scroll', ()=>{
+  if(!ticking){ requestAnimationFrame(onScroll); ticking = true; }
+}, {passive:true});
+addEventListener('resize', paint, {passive:true});
+onScroll();
+
+// reveal
+const io = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:0.15});
+document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+// reel controls
+const track = document.getElementById('reelTrack');
+const step = ()=> Math.min(innerWidth*0.78, 460);
+document.getElementById('prev').addEventListener('click', ()=> track.scrollBy({left:-step(),behavior:'smooth'}));
+document.getElementById('next').addEventListener('click', ()=> track.scrollBy({left:step(),behavior:'smooth'}));
+
+applyLang(lang);
+paint();
+addEventListener('load', paint);
+</script>
 </body>
 </html>
