@@ -21,7 +21,7 @@ img { display: block; max-width: 100%; }
 .topline span:last-child { opacity: .72; }
 .nav { align-items: center; display: flex; justify-content: space-between; max-width: 1320px; margin: auto; padding: 24px 5vw; }
 .brand { align-items: center; display: flex; gap: 13px; font-weight: 700; letter-spacing: .06em; }
-.brand img { border-radius: 50%; height: 43px; width: 43px; }
+.brand img { border-radius: 50%; height: 100px; width: 100px; }
 .brand-name { font-size: .95rem; }
 .nav-links { align-items: center; display: flex; gap: 30px; font-size: .86rem; }
 .nav-links a { transition: color .2s; }
