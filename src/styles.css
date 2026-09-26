@@ -37,7 +37,7 @@ img{display:block;max-width:100%;}
 
 /* hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;}
-.hero .bg{position:absolute;inset:0;background:url('images/book.png') center/cover;
+.hero .bg{position:absolute;inset:0;background:url('/images/book.png') center/cover;
   filter:grayscale(.55) contrast(1.08) brightness(.62);transform:scale(1.05);}
 .hero::after{content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(10,10,11,.5) 0%,rgba(10,10,11,.15) 40%,rgba(10,10,11,.92) 100%);}
