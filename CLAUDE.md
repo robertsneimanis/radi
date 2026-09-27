@@ -51,4 +51,4 @@ Trilingual (LV/EN/SV) content lives in `src/i18n.js` — one key per copy string
 ## Conventions
 
 - Keep dependencies minimal (React + Vite only). Plain CSS, no CSS framework.
-- Fonts come from Google Fonts (`Anton` for display headings, `Inter` for body), linked in `index.html`.
+- Fonts (`Anton` for display headings, `Inter` for body) are self-hosted in `public/fonts/` (latin + latin-ext woff2) and declared with `@font-face` at the top of `src/styles.css` — no third-party requests, so no GDPR consent is needed. Do not reintroduce Google Fonts links.
